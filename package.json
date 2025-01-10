@@ -1,8 +1,27 @@
 {
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "description": "A WhatsApp bot using Twilio and Node.js",
+  "main": "wabot1.js",
+  "scripts": {
+    "start": "node wabot1.js"
+  },
   "dependencies": {
     "body-parser": "^1.20.3",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "twilio": "^5.4.0"
-  }
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "twilio",
+    "express",
+    "nodejs"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
 }
