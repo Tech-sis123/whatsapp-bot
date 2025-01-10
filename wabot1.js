@@ -12,7 +12,8 @@ const port = process.env.PORT || 3000;
 
 // Middleware to parse incoming request bodies
 app.use(bodyParser.urlencoded({ extended: false }));
-
+// to fix issues with undefined behavior
+app.use(express.json());
 // Twilio credentials from .env
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
